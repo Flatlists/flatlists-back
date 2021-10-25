@@ -1,0 +1,176 @@
+  [1m[35m (262.9ms)[0m  [1m[35mCREATE DATABASE "jwt_tutorial_development" ENCODING = 'unicode'[0m
+  [1m[35m (203.2ms)[0m  [1m[35mCREATE DATABASE "jwt_tutorial_test" ENCODING = 'unicode'[0m
+  [1m[35m (18.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  [1m[35m (31.9ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8575928817809238585)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to DeviseCreateUsers (20211025151938)
+  [1m[36mTRANSACTION (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (48.7ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp(6) NOT NULL, "updated_at" timestamp(6) NOT NULL)[0m
+  [1m[35m (1.8ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (47.7ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (14.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211025151938"]]
+  [1m[36mTRANSACTION (1.6ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.9ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mActiveRecord::InternalMetadata Create (0.9ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2021-10-25 15:20:02.861233"], ["updated_at", "2021-10-25 15:20:02.861233"]]
+  [1m[36mTRANSACTION (0.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT pg_advisory_unlock(8575928817809238585)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(8575928817809238585)[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddJtiToUsers (20211025153236)
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[35m (40.7ms)[0m  [1m[35mALTER TABLE "users" ADD "jti" character varying NOT NULL[0m
+  [1m[35m (5.9ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_jti" ON "users" ("jti")[0m
+  [1m[36mActiveRecord::SchemaMigration Create (2.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20211025153236"]]
+  [1m[36mTRANSACTION (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(8575928817809238585)[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for ::1 at 2021-10-25 11:51:04 -0400
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 27.4ms | Allocations: 402)
+Completed 200 OK in 123ms (Views: 66.2ms | ActiveRecord: 0.0ms | Allocations: 3453)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-10-25 11:51:04 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started POST "/signup" for ::1 at 2021-10-25 11:53:28 -0400
+Processing by Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.4ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (50.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "test@test.com"], ["encrypted_password", "$2a$12$d8B3QADEIwQl1dPuPS43s.HWl2JwkOxf/8YZUYi/ci83GHFug3cVe"], ["created_at", "2021-10-25 15:53:28.752780"], ["updated_at", "2021-10-25 15:53:28.752780"], ["jti", "d3bd25de-995b-4d07-92db-e8721b7731ba"]]
+  [1m[36mTRANSACTION (1.3ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Completed 200 OK in 441ms (Views: 27.0ms | ActiveRecord: 96.1ms | Allocations: 11845)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 11:57:25 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms | Allocations: 355)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 11:58:44 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 42ms (Views: 2.6ms | ActiveRecord: 8.0ms | Allocations: 5302)
+
+
+Started POST "/login" for ::1 at 2021-10-25 12:05:34 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Completed 200 OK in 412ms (Views: 0.7ms | ActiveRecord: 49.1ms | Allocations: 5450)
+
+
+Started DELETE "/logout" for ::1 at 2021-10-25 12:07:07 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:13:in `respond_to_on_destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.15ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 62ms (Views: 1.0ms | ActiveRecord: 0.7ms | Allocations: 930)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (12.8ms)[0m  [1m[33mUPDATE "users" SET "jti" = $1 WHERE "users"."id" = $2[0m  [["jti", "08422c1b-e22b-4107-8036-590118efe8fd"], ["id", 1]]
+Started GET "/private/test" for ::1 at 2021-10-25 12:07:34 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 12ms (ActiveRecord: 0.5ms | Allocations: 932)
+
+
+Started POST "/login" for ::1 at 2021-10-25 12:08:52 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 200 OK in 288ms (Views: 0.7ms | ActiveRecord: 0.8ms | Allocations: 1492)
+
+
+Started DELETE "/logout" for ::1 at 2021-10-25 12:09:46 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:13:in `respond_to_on_destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.08ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 13ms (Views: 0.5ms | ActiveRecord: 0.5ms | Allocations: 908)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (2.4ms)[0m  [1m[33mUPDATE "users" SET "jti" = $1 WHERE "users"."id" = $2[0m  [["jti", "08458fdf-ab2b-4c67-aefc-9879d61fa7af"], ["id", 1]]
+Started DELETE "/logout" for ::1 at 2021-10-25 12:09:59 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:13:in `respond_to_on_destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.1ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 22ms (Views: 0.7ms | ActiveRecord: 1.2ms | Allocations: 879)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (2.4ms)[0m  [1m[33mUPDATE "users" SET "jti" = $1 WHERE "users"."id" = $2[0m  [["jti", "2d2010fe-790a-4bd5-a2c3-bb41315fcabf"], ["id", 1]]
+Started GET "/private/test" for ::1 at 2021-10-25 12:10:50 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 58)
+
+
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started GET "/" for ::1 at 2021-10-25 14:33:37 -0400
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 11.8ms | Allocations: 294)
+Completed 200 OK in 31ms (Views: 17.4ms | ActiveRecord: 0.0ms | Allocations: 2299)
+
+
+Started GET "/" for ::1 at 2021-10-25 15:04:51 -0400
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 17.6ms | Allocations: 294)
+Completed 200 OK in 73ms (Views: 31.2ms | ActiveRecord: 0.0ms | Allocations: 2299)
+
+
+Started GET "/favicon.ico" for ::1 at 2021-10-25 15:04:51 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+Started GET "/" for ::1 at 2021-10-25 15:05:11 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.0ms | Allocations: 178)
+Completed 200 OK in 29ms (Views: 25.9ms | ActiveRecord: 0.0ms | Allocations: 810)
+
+
+Started POST "/signup" for ::1 at 2021-10-25 15:09:05 -0400
+Processing by Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (40.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (1.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[31mROLLBACK[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (1.54ms)
+Completed 422 Unprocessable Entity in 480ms (Views: 7.5ms | ActiveRecord: 104.2ms | Allocations: 11938)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 15:16:22 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (Allocations: 75)
+
+
