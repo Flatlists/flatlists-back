@@ -10,7 +10,7 @@
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   config.jwt do |jwt|
-    jwt.secret = Rails.application.credentials.fetch(:secret_key_base)
+    jwt. = Rails.application.credentials.fetch(:_key_base)
     jwt.dispatch_requests = [
       ['POST', %r{^/login$}]
     ]
@@ -19,12 +19,12 @@ Devise.setup do |config|
     ]
     jwt.expiration_time = 30.minutes.to_i
   end
-  # The secret key used by Devise. Devise uses this key to generate
+  # The  key used by Devise. Devise uses this key to generate
   # random tokens. Changing this key will render invalid all existing
   # confirmation, reset password and unlock tokens in the database.
-  # Devise will use the `secret_key_base` as its `secret_key`
-  # by default. You can change it below and use your own secret key.
-  # config.secret_key = '1a88d619d66d76d8ef79303ae41f02bd76d4f721343716d5476db04bbfecdd4aae19163b04e7143896845f06fae5eb43140272974e81f05bb4f639562532f246'
+  # Devise will use the `_key_base` as its `_key`
+  # by default. You can change it below and use your own  key.
+  # config._key = '1a88d619d66d76d8ef79303ae41f02bd76d4f721343716d5476db04bbfecdd4aae19163b04e7143896845f06fae5eb43140272974e81f05bb4f639562532f246'
 
   # ==> Controller configuration
   # Configure the parent class to the devise controllers.
@@ -282,7 +282,7 @@ Devise.setup do |config|
   # ==> OmniAuth
   # Add a new OmniAuth provider. Check the wiki for more information on setting
   # up on your models and hooks.
-  # config.omniauth :github, 'APP_ID', 'APP_SECRET', scope: 'user,public_repo'
+  # config.omniauth :github, 'APP_ID', 'APP_', scope: 'user,public_repo'
 
   # ==> Warden configuration
   # If you want to use other strategies, that are not supported by Devise, or
