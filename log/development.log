@@ -233,3 +233,626 @@ Started GET "/users" for ::1 at 2021-10-25 19:30:35 -0400
 ActionController::RoutingError (uninitialized constant UsersController
 Did you mean?  UserSerializer):
   
+Started GET "/users" for ::1 at 2021-10-25 20:11:45 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:11:56 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:11:59 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:12:00 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:12:19 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/" for ::1 at 2021-10-25 20:12:26 -0400
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /Users/PETERBACENET/.rvm/gems/ruby-2.7.4/gems/railties-6.1.4.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 15.6ms | Allocations: 177)
+Completed 200 OK in 23ms (Views: 18.9ms | Allocations: 795)
+
+
+Started GET "/users" for ::1 at 2021-10-25 20:12:36 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:13:15 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:13:16 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:14:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:14:30 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:14:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:14:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:14:31 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:14:32 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+Started GET "/user" for ::1 at 2021-10-25 20:17:51 -0400
+Processing by UserController#index as HTML
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/user_controller.rb:3:in `index'
+No serializer found for resource: #<User id: 1, email: "test@test.com", created_at: "2021-10-25 15:53:28.752780000 +0000", updated_at: "2021-10-25 15:53:28.752780000 +0000", jti: "2d2010fe-790a-4bd5-a2c3-bb41315fcabf", name: nil, bio: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (2.26ms)
+Completed 200 OK in 117ms (Views: 115.2ms | ActiveRecord: 68.8ms | Allocations: 10579)
+
+
+Started GET "/users" for ::1 at 2021-10-25 20:18:01 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:18:57 -0400
+  
+Zeitwerk::NameError (expected file /Users/PETERBACENET/Development/Rails/Project/flatlists/app/controllers/users_controller.rb to define constant UsersController, but didn't):
+  
+zeitwerk (2.5.1) lib/zeitwerk/loader/callbacks.rb:25:in `on_file_autoloaded'
+zeitwerk (2.5.1) lib/zeitwerk/kernel.rb:28:in `block in require'
+zeitwerk (2.5.1) lib/zeitwerk/kernel.rb:27:in `tap'
+zeitwerk (2.5.1) lib/zeitwerk/kernel.rb:27:in `require'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:274:in `const_get'
+activesupport (6.1.4.1) lib/active_support/inflector/methods.rb:274:in `constantize'
+activesupport (6.1.4.1) lib/active_support/dependencies/zeitwerk_integration.rb:19:in `constantize'
+actionpack (6.1.4.1) lib/action_dispatch/http/request.rb:93:in `controller_class_for'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:95:in `action_encoding_template'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:83:in `encode'
+actionpack (6.1.4.1) lib/action_dispatch/request/utils.rb:45:in `set_binary_encoding'
+actionpack (6.1.4.1) lib/action_dispatch/http/parameters.rb:68:in `path_parameters='
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:48:in `block in serve'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (6.1.4.1) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (6.1.4.1) lib/action_dispatch/routing/route_set.rb:842:in `call'
+warden-jwt_auth (0.6.0) lib/warden/jwt_auth/middleware/token_dispatcher.rb:20:in `call'
+warden-jwt_auth (0.6.0) lib/warden/jwt_auth/middleware/revocation_manager.rb:21:in `call'
+rack (2.2.3) lib/rack/builder.rb:244:in `call'
+warden-jwt_auth (0.6.0) lib/warden/jwt_auth/middleware.rb:22:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3) lib/rack/etag.rb:27:in `call'
+rack (2.2.3) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3) lib/rack/head.rb:12:in `call'
+activerecord (6.1.4.1) lib/active_record/migration.rb:601:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.1.4.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/actionable_exceptions.rb:18:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/debug_exceptions.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.1.4.1) lib/rails/rack/logger.rb:37:in `call_app'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `block in tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:37:in `tagged'
+activesupport (6.1.4.1) lib/active_support/tagged_logging.rb:99:in `tagged'
+railties (6.1.4.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3) lib/rack/runtime.rb:22:in `call'
+activesupport (6.1.4.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/static.rb:24:in `call'
+rack (2.2.3) lib/rack/sendfile.rb:110:in `call'
+actionpack (6.1.4.1) lib/action_dispatch/middleware/host_authorization.rb:98:in `call'
+rack-cors (1.1.1) lib/rack/cors.rb:100:in `call'
+railties (6.1.4.1) lib/rails/engine.rb:539:in `call'
+puma (5.5.2) lib/puma/configuration.rb:249:in `call'
+puma (5.5.2) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.5.2) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.5.2) lib/puma/request.rb:76:in `handle_request'
+puma (5.5.2) lib/puma/server.rb:447:in `process_client'
+puma (5.5.2) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/users" for ::1 at 2021-10-25 20:19:09 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:19:12 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:19:13 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:19:14 -0400
+  
+ActionController::RoutingError (uninitialized constant UsersController
+Did you mean?  UserController):
+  
+Started GET "/users" for ::1 at 2021-10-25 20:19:57 -0400
+  
+TypeError (superclass mismatch for class UserController):
+  
+app/controllers/users_controller.rb:1:in `<main>'
+Started GET "/users" for ::1 at 2021-10-25 20:20:24 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.4ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3:in `index'
+No serializer found for resource: #<User id: 1, email: "test@test.com", created_at: "2021-10-25 15:53:28.752780000 +0000", updated_at: "2021-10-25 15:53:28.752780000 +0000", jti: "2d2010fe-790a-4bd5-a2c3-bb41315fcabf", name: nil, bio: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.4ms)
+Completed 200 OK in 49ms (Views: 19.1ms | ActiveRecord: 28.5ms | Allocations: 6084)
+
+
+Started GET "/login" for ::1 at 2021-10-25 20:21:46 -0400
+Processing by Users::SessionsController#new as HTML
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.3ms)
+Completed 200 OK in 11ms (Views: 4.6ms | ActiveRecord: 0.0ms | Allocations: 1046)
+
+
+Started GET "/logout" for ::1 at 2021-10-25 20:21:58 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/logout"):
+  
+Started GET "/current_user" for ::1 at 2021-10-25 20:22:50 -0400
+Processing by CurrentUserController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 73)
+
+
+Started GET "/sign_up" for ::1 at 2021-10-25 20:23:07 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/sign_up"):
+  
+Started GET "/signup" for ::1 at 2021-10-25 20:23:13 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/signup"):
+  
+Started GET "/playlists" for ::1 at 2021-10-25 20:23:59 -0400
+  
+SyntaxError (/Users/PETERBACENET/Development/Rails/Project/flatlists/app/controllers/playlists_controller.rb:2: syntax error, unexpected ':', expecting `end'
+rescue_from: ActiveRecord::RecordNotFound...
+           ^
+/Users/PETERBACENET/Development/Rails/Project/flatlists/app/controllers/playlists_controller.rb:2: syntax error, unexpected tLABEL, expecting '='
+...veRecord::RecordNotFound, with: :rescue_notfound
+...                          ^~~~~
+):
+  
+app/controllers/playlists_controller.rb:2: syntax error, unexpected ':', expecting `end'
+app/controllers/playlists_controller.rb:2: syntax error, unexpected tLABEL, expecting '='
+app/controllers/playlists_controller.rb:2: syntax error, unexpected ':', expecting `end'
+app/controllers/playlists_controller.rb:2: syntax error, unexpected tLABEL, expecting '='
+Started GET "/playlists" for ::1 at 2021-10-25 20:24:45 -0400
+  
+SyntaxError (/Users/PETERBACENET/Development/Rails/Project/flatlists/app/controllers/playlists_controller.rb:15: syntax error, unexpected ':', expecting =>
+...          render json: {error : "Validation Error"}
+...                              ^
+/Users/PETERBACENET/Development/Rails/Project/flatlists/app/controllers/playlists_controller.rb:15: syntax error, unexpected '}', expecting `end'
+...n: {error : "Validation Error"}
+...                              ^
+/Users/PETERBACENET/Development/Rails/Project/flatlists/app/controllers/playlists_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/playlists_controller.rb:15: syntax error, unexpected ':', expecting =>
+app/controllers/playlists_controller.rb:15: syntax error, unexpected '}', expecting `end'
+app/controllers/playlists_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/playlists_controller.rb:15: syntax error, unexpected ':', expecting =>
+app/controllers/playlists_controller.rb:15: syntax error, unexpected '}', expecting `end'
+app/controllers/playlists_controller.rb:35: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/playlists" for ::1 at 2021-10-25 20:25:27 -0400
+Processing by PlaylistsController#index as HTML
+  [1m[36mPlaylist Load (41.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (62.22ms)
+Completed 500 Internal Server Error in 172ms (ActiveRecord: 49.3ms | Allocations: 18341)
+
+
+  
+NoMethodError (undefined method `song' for #<Playlist:0x00007f961dcf7348>
+Did you mean?  songs):
+  
+app/controllers/playlists_controller.rb:4:in `index'
+Started GET "/playlists" for ::1 at 2021-10-25 20:26:19 -0400
+Processing by PlaylistsController#index as HTML
+  [1m[36mPlaylist Load (1.5ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (36.0ms)
+Completed 200 OK in 108ms (Views: 70.8ms | ActiveRecord: 33.4ms | Allocations: 10828)
+
+
+Started GET "/playlists" for ::1 at 2021-10-25 20:28:09 -0400
+Processing by PlaylistsController#index as HTML
+  [1m[36mPlaylist Load (0.3ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists"[0m
+  ↳ app/controllers/playlists_controller.rb:4:in `index'
+[active_model_serializers]   [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:4:in `index'
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with ActiveModelSerializers::Adapter::Attributes (29.17ms)
+Completed 200 OK in 75ms (Views: 43.4ms | ActiveRecord: 29.1ms | Allocations: 10737)
+
+
+Started GET "/playlist/1" for ::1 at 2021-10-25 20:28:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/playlist/1"):
+  
+Started GET "/playlists/1" for ::1 at 2021-10-25 20:28:20 -0400
+Processing by PlaylistsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mPlaylist Load (9.6ms)[0m  [1m[34mSELECT "playlists".* FROM "playlists" WHERE "playlists"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/playlists_controller.rb:7:in `show'
+[active_model_serializers]   [1m[36mUser Load (42.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers]   ↳ app/controllers/playlists_controller.rb:8:in `show'
+[active_model_serializers] Rendered PlaylistSerializer with ActiveModelSerializers::Adapter::Attributes (51.88ms)
+Completed 200 OK in 88ms (Views: 11.4ms | ActiveRecord: 51.8ms | Allocations: 1821)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:34:31 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 3ms (Allocations: 362)
+
+
+Started POST "/login" for ::1 at 2021-10-25 20:34:53 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.48ms)
+Completed 200 OK in 361ms (Views: 1.8ms | ActiveRecord: 21.5ms | Allocations: 10304)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:38:23 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:38:35 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started POST "/logout" for ::1 at 2021-10-25 20:38:54 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  
+Started GET "/private/test" for ::1 at 2021-10-25 20:39:02 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started POST "/login" for ::1 at 2021-10-25 20:39:04 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.27ms)
+Completed 200 OK in 353ms (Views: 0.6ms | ActiveRecord: 1.0ms | Allocations: 1494)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:39:06 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started POST "/signup" for ::1 at 2021-10-25 20:39:50 -0400
+Processing by Users::RegistrationsController#create as */*
+  Parameters: {"user"=>{"email"=>"peterbacenet@icloud.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"email"=>"peterbacenet@icloud.com", "password"=>"[FILTERED]"}}}
+  [1m[36mTRANSACTION (0.5ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Exists? (34.8ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "peterbacenet@icloud.com"], ["LIMIT", 1]]
+  [1m[36mUser Create (68.3ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "peterbacenet@icloud.com"], ["encrypted_password", "$2a$12$iKgPMR/baBSfBsa971FxZepIzh/4h7FZBHmFtJw/d6IiC.C8Hw39u"], ["created_at", "2021-10-26 00:39:51.487552"], ["updated_at", "2021-10-26 00:39:51.487552"], ["jti", "5f07d38b-b10b-4e2b-8223-41c18068d38f"]]
+  [1m[36mTRANSACTION (2.0ms)[0m  [1m[35mCOMMIT[0m
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.36ms)
+Completed 200 OK in 588ms (Views: 8.0ms | ActiveRecord: 105.6ms | Allocations: 4594)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:40:02 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started POST "/login" for ::1 at 2021-10-25 20:41:37 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (3.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.18ms)
+Completed 200 OK in 485ms (Views: 0.9ms | ActiveRecord: 3.5ms | Allocations: 1496)
+
+
+Started POST "/logout" for ::1 at 2021-10-25 20:41:52 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  
+Started GET "/private/test" for ::1 at 2021-10-25 20:42:41 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started GET "/users" for ::1 at 2021-10-25 20:43:14 -0400
+  
+SyntaxError (/Users/PETERBACENET/Development/Rails/Project/flatlists/app/controllers/users_controller.rb:16: syntax error, unexpected ':', expecting ')'
+...sword, :password_confirmation :email)
+...                              ^
+):
+  
+app/controllers/users_controller.rb:16: syntax error, unexpected ':', expecting ')'
+app/controllers/users_controller.rb:16: syntax error, unexpected ':', expecting ')'
+Started GET "/users" for ::1 at 2021-10-25 20:43:34 -0400
+Processing by UsersController#index as HTML
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users"[0m
+  ↳ app/controllers/users_controller.rb:3:in `index'
+No serializer found for resource: #<User id: 1, email: "test@test.com", created_at: "2021-10-25 15:53:28.752780000 +0000", updated_at: "2021-10-25 15:53:28.752780000 +0000", jti: "2d2010fe-790a-4bd5-a2c3-bb41315fcabf", name: nil, bio: nil>
+[active_model_serializers] Rendered ActiveModel::Serializer::CollectionSerializer with User::ActiveRecord_Relation (0.85ms)
+Completed 200 OK in 86ms (Views: 33.7ms | ActiveRecord: 51.3ms | Allocations: 6213)
+
+
+Started GET "/users/2" for ::1 at 2021-10-25 20:44:07 -0400
+Processing by UsersController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mUser Load (6.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/users_controller.rb:6:in `show'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with User (0.63ms)
+Completed 200 OK in 27ms (Views: 2.7ms | ActiveRecord: 6.3ms | Allocations: 874)
+
+
+Started POST "/logout" for ::1 at 2021-10-25 20:44:38 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  
+Started POST "/logout" for ::1 at 2021-10-25 20:44:53 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/logout"):
+  
+Started DELETE "/logout" for ::1 at 2021-10-25 20:46:43 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"user"=>{"email"=>"peterbacenet@icloud.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"peterbacenet@icloud.com", "password"=>"[FILTERED]"}}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.35ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.4ms | ActiveRecord: 0.0ms | Allocations: 494)
+
+
+  [1m[36mUser Load (0.7ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (1.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mUser Destroy (44.4ms)[0m  [1m[31mDELETE FROM "users" WHERE "users"."id" = $1[0m  [["id", 2]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mUser Load (2.2ms)[0m  [1m[34mSELECT "users".* FROM "users" /* loading for inspect */ LIMIT $1[0m  [["LIMIT", 11]]
+Started DELETE "/login" for ::1 at 2021-10-25 20:51:02 -0400
+  
+ActionController::RoutingError (No route matches [DELETE] "/login"):
+  
+Started POST "/login" for ::1 at 2021-10-25 20:51:19 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"peterbacenet@icloud.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"peterbacenet@icloud.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.8ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "peterbacenet@icloud.com"], ["LIMIT", 1]]
+Completed 401 Unauthorized in 68ms (ActiveRecord: 12.7ms | Allocations: 4266)
+
+
+Started POST "/login" for ::1 at 2021-10-25 20:51:42 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.6ms)
+Completed 200 OK in 315ms (Views: 1.1ms | ActiveRecord: 0.5ms | Allocations: 1633)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:52:27 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 73)
+
+
+Started GET "/current_user" for ::1 at 2021-10-25 20:53:07 -0400
+Processing by CurrentUserController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 71)
+
+
+Started POST "/login" for ::1 at 2021-10-25 20:54:39 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.24ms)
+Completed 200 OK in 323ms (Views: 1.3ms | ActiveRecord: 0.4ms | Allocations: 1495)
+
+
+Started GET "/current_user" for ::1 at 2021-10-25 20:55:48 -0400
+Processing by CurrentUserController#index as HTML
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.0ms | Allocations: 354)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:56:42 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 71)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:57:13 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.26ms)
+Completed 200 OK in 101ms (Views: 5.2ms | ActiveRecord: 38.7ms | Allocations: 6117)
+
+
+Started DELETE "/logout" for ::1 at 2021-10-25 20:58:26 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.78ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 5ms (Views: 3.2ms | ActiveRecord: 0.0ms | Allocations: 489)
+
+
+Started DELETE "/logout" for ::1 at 2021-10-25 20:58:45 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.24ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 401 Unauthorized in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms | Allocations: 258)
+
+
+Started DELETE "/logout" for ::1 at 2021-10-25 20:58:56 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:13:in `respond_to_on_destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.13ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 117ms (Views: 1.0ms | ActiveRecord: 0.4ms | Allocations: 915)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (25.3ms)[0m  [1m[33mUPDATE "users" SET "jti" = $1 WHERE "users"."id" = $2[0m  [["jti", "9398e8ea-6e48-4630-beda-fd05320b41d7"], ["id", 1]]
+Started GET "/private/test" for ::1 at 2021-10-25 20:59:41 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 0ms (ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 20:59:51 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 58)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 21:07:23 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+Completed 401 Unauthorized in 1ms (Allocations: 58)
+
+
+Started POST "/login" for ::1 at 2021-10-25 21:07:46 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (1.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.47ms)
+Completed 200 OK in 411ms (Views: 1.5ms | ActiveRecord: 13.7ms | Allocations: 6243)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 21:07:53 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.25ms)
+Completed 200 OK in 33ms (Views: 1.6ms | ActiveRecord: 1.3ms | Allocations: 1151)
+
+
+Started DELETE "/logout" for ::1 at 2021-10-25 21:08:25 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (2.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:13:in `respond_to_on_destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.19ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 44ms (Views: 1.2ms | ActiveRecord: 2.5ms | Allocations: 912)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (72.4ms)[0m  [1m[33mUPDATE "users" SET "jti" = $1 WHERE "users"."id" = $2[0m  [["jti", "bf0f3aac-7e61-4784-a31c-e8382ed5598d"], ["id", 1]]
+Started GET "/private/test" for ::1 at 2021-10-25 21:08:38 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 105ms (ActiveRecord: 0.6ms | Allocations: 935)
+
+
+Started POST "/login" for ::1 at 2021-10-25 21:08:46 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (4.7ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.23ms)
+Completed 200 OK in 333ms (Views: 0.9ms | ActiveRecord: 4.7ms | Allocations: 1494)
+
+
+Started GET "/current_user" for ::1 at 2021-10-25 21:08:49 -0400
+Processing by CurrentUserController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 56)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 21:19:04 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.16ms)
+Completed 200 OK in 84ms (Views: 1.3ms | ActiveRecord: 51.1ms | Allocations: 9081)
+
+
+Started DELETE "/logout" for ::1 at 2021-10-25 21:19:31 -0400
+Processing by Users::SessionsController#destroy as */*
+  Parameters: {"session"=>{}}
+  [1m[36mUser Load (5.6ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/users/sessions_controller.rb:13:in `respond_to_on_destroy'
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.09ms)
+Filter chain halted as :verify_signed_out_user rendered or redirected
+Completed 200 OK in 15ms (Views: 1.3ms | ActiveRecord: 5.6ms | Allocations: 1143)
+
+
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  [1m[36mUser Update (7.4ms)[0m  [1m[33mUPDATE "users" SET "jti" = $1 WHERE "users"."id" = $2[0m  [["jti", "d583c11e-56dd-4d79-a1e7-f22f873b75ff"], ["id", 1]]
+Started GET "/private/test" for ::1 at 2021-10-25 21:19:34 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+  [1m[36mUser Load (1.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+Completed 401 Unauthorized in 16ms (ActiveRecord: 1.1ms | Allocations: 935)
+
+
+Started POST "/login" for ::1 at 2021-10-25 21:19:51 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (4.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.48ms)
+Completed 200 OK in 293ms (Views: 1.0ms | ActiveRecord: 4.4ms | Allocations: 3104)
+
+
+Started GET "/current_user" for ::1 at 2021-10-25 21:20:09 -0400
+Processing by CurrentUserController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms | Allocations: 72)
+
+
+Started GET "/private/test" for ::1 at 2021-10-25 21:20:17 -0400
+Processing by PrivateController#test as */*
+  Parameters: {"private"=>{}}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (2.32ms)
+Completed 200 OK in 19ms (Views: 3.7ms | ActiveRecord: 0.4ms | Allocations: 1148)
+
+
+Started POST "/login" for ::1 at 2021-10-25 21:23:04 -0400
+Processing by Users::SessionsController#create as */*
+  Parameters: {"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}, "session"=>{"user"=>{"email"=>"test@test.com", "password"=>"[FILTERED]"}}}
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."email" = $1 ORDER BY "users"."id" ASC LIMIT $2[0m  [["email", "test@test.com"], ["LIMIT", 1]]
+[active_model_serializers] Rendered ActiveModel::Serializer::Null with Hash (0.29ms)
+Completed 200 OK in 263ms (Views: 0.8ms | ActiveRecord: 0.5ms | Allocations: 1495)
+
+

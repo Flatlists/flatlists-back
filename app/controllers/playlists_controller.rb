@@ -1,5 +1,5 @@
 class PlaylistsController < ApplicationController
-rescue_from: ActiveRecord::RecordNotFound, with: :rescue_notfound
+rescue_from ActiveRecord::RecordNotFound, with: :rescue_notfound
     def index
         render json: Playlist.all
     end
@@ -16,6 +16,11 @@ rescue_from: ActiveRecord::RecordNotFound, with: :rescue_notfound
         end
     end
     def update
+        selected_playlist = Playlist.find(params[:id])
+        selected_playlist.update(update_params)
+        render json: selected_playlist, status: 200
+    end
+    def add_song
         selected_playlist = Playlist.find(params[:id])
         selected_playlist.update(update_params)
         render json: selected_playlist, status: 200
